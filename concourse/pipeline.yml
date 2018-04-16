@@ -13,6 +13,6 @@ jobs:
   - get: spring-boot-concourse
     trigger: true
   - task: Build project
-    file: Concourse-Maven-Demo/concourse/tasks/build.yml
+    file: concourse/tasks/build.yml
   - task: Deploy artifact
-    file: Concourse-Maven-Demo/concourse/tasks/deploy.yml
+    file: concourse/tasks/deploy.yml
