@@ -3,7 +3,7 @@ resources:
     type: git
     check_every: 10s
     source:
-      uri: https://github.com/bmullan-pivotal/Concourse-Maven-Demo
+      uri: https://github.com/bmullan-pivotal/Concourse-Maven-Demo.git
       branch: master
 
 jobs:
