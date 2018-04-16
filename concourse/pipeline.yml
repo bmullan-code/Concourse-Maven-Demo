@@ -3,7 +3,7 @@ resources:
     type: git
     check_every: 10s
     source:
-      uri: https://github.com/jarlehansen/spring-boot-concourse.git
+      uri: https://github.com/bmullan-pivotal/Concourse-Maven-Demo
       branch: master
 
 jobs:
@@ -13,6 +13,6 @@ jobs:
   - get: spring-boot-concourse
     trigger: true
   - task: Build project
-    file: spring-boot-concourse/concourse/tasks/build.yml
+    file: Concourse-Maven-Demo/concourse/tasks/build.yml
   - task: Deploy artifact
-    file: spring-boot-concourse/concourse/tasks/deploy.yml
+    file: Concourse-Maven-Demo/concourse/tasks/deploy.yml
